@@ -80,6 +80,7 @@ class _HomepageState extends State<Homepage> {
   int ghostIndex = 0;
   final ghostDuration = const Duration(milliseconds: 500);
   void makeMoveGhost() {
+    if (ghost == -1) return;
     ghost = ghostPattern[ghostIndex % 13];
   }
 
